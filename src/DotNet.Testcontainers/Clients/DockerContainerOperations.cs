@@ -151,6 +151,7 @@ namespace DotNet.Testcontainers.Clients
 
       var hostConfig = new HostConfig
       {
+        AutoRemove = "ryuk".Equals(configuration.Name, StringComparison.OrdinalIgnoreCase),
         PortBindings = converter.PortBindings,
         Mounts = converter.Mounts,
       };
