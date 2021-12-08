@@ -133,7 +133,7 @@ namespace DotNet.Testcontainers.Clients
           // https://docs.docker.com/engine/api/v1.41/#operation/ContainerCreate.
           if (!e.Message.Contains($"removal of container {id} is already in progress"))
           {
-            throw;
+            // throw;
           }
         }
       }
